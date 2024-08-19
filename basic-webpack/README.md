@@ -256,3 +256,23 @@ module.exports = {
 ```
 
 * **assetModuleFilename**: allows to keep the file name consistant, if this is missing an hash will replace the filename.
+
+
+### Bundle analyser
+With this you can have a visual overview of the dependency and the component engaged in the app.
+
+##### Install dependency
+```
+npm i -D webpack-bundle-analyzer
+```
+
+##### update webpack.config.js:
+```
+module.exports = {
+    ... , 
+    plugins: [
+        ... ,
+ -->    new BundleAnalyserPlugin()
+    ]
+}
+```
